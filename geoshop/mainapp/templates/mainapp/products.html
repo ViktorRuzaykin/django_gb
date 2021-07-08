@@ -1,31 +1,27 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/static/geoshop/css/main.css">
-    <title>Продукты GEO SHOP</title>
-  </head>
-  <body id = "body">
-    <div class="header">
-    <div id = "shop"> <h1>GEO SHOP</h1> <p>Магазин современного геодезического оорудования</p></div>
-    <ul id = "nav">
-      <li><a href="/">Главная</a></li>
-      <li><a href="/products/">Продукты</a></li>
-      <li><a href="/contacts/">Контакты</a></li>
+{% extends 'base.html' %}
+
+{% block title %}Продукты{% endblock %}
+
+{% block main %}
+<div id = "menu">
+    <ul id = "menu_nav">
+      {% for link in links_menu %}
+      <li><a href="{{link.href}}">{{link.name}}</a></li>
+      {% endfor %}
+      <!--
+      <li><a href="#">ГНСС оборудование</a></li>
+      <li><a href="#">3D сканеры</a></li>
+      <li><a href="#">Радио станции</a></li>
+      <li><a href="#">Лазерные дальномеры</a></li>
+      -->
     </ul>
-    </div>
-    <div id="main">
-      <div class="device"> <h3>SOKKIA IM-52</h3> <p>Цена: 300 000р.</p> <img id =img1 src="/static/geoshop/img/004349.jpg" alt="001814"> </div>
-      <div class="device"> <h3>SOKKIA IM-102L</h3> <p>Цена: 250 000р.</p> <img id =img1 src="/static/geoshop/img/004472.jpg" alt="004472"></div>
-      <div class="device"> <h3>SOKKIA FX-101</h3> <p>Цена: 400 000р.</p> <img id =img1 src="/static/geoshop/img/FX-101.jpg" alt="FX-105"></div>
+</div>
 
-      </div>
-
-    <div class="footer">
-      Все права защищены "GeoShop"
-    </div>
+<div id="main">
+  <div class="device"> <h3>SOKKIA IM-52</h3> <p>Цена: 300 000р.</p> <img id =img1 src="/static/geoshop/img/004349.jpg" alt="001814"> </div>
+  <div class="device"> <h3>SOKKIA IM-102L</h3> <p>Цена: 250 000р.</p> <img id =img1 src="/static/geoshop/img/004472.jpg" alt="004472"></div>
+  <div class="device"> <h3>SOKKIA FX-101</h3> <p>Цена: 400 000р.</p> <img id =img1 src="/static/geoshop/img/FX-101.jpg" alt="FX-105"></div>
+</div>
 
 
-
-  </body>
-</html>
+{% endblock %}

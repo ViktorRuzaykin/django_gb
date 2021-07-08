@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/static/geoshop/css/main.css">
-    <title>GEO SHOP</title>
-  </head>
-  <body id = "body">
-    <div class="header">
-    <div id = "shop"> <h1>GEO SHOP</h1> <p>Современное геодезическое оорудование</p></div>
-    <ul id = "nav">
-      <li><a href="/">Главная</a></li>
-      <li><a href="products/">Продукты</a></li>
-      <li><a href="contacts/">Контакты</a></li>
-    </ul>
-    </div>
-    <div id="main"><br>
-      <img src="/static/geoshop/img/geo_shop_1.png" alt="geo_shop">
-      <h2>КОМПАНИЯ "GEO Shop"</h1> <br>
-      <p>Генеральный дистрибьютор TOPCON и SOKKIA в России</p>
+{% extends 'base.html' %}
 
-      <p>Продажа, техническая поддержка, обслуживание, сертификация, метрологическое обеспечение,
+
+{% block main %}
+<div id="main"><br>
+  <img src="/static/geoshop/img/geo_shop_1.png" alt="geo_shop">
+  <h2>КОМПАНИЯ "GEO Shop" {% now "Y" %}</h2> <br>
+  <p>Генеральный дистрибьютор TOPCON и SOKKIA в России</p>
+
+  <p>Продажа, техническая поддержка, обслуживание, сертификация, метрологическое обеспечение,
         а также внедрение комплексных технологических решений на базе высокотехнологичного
         оборудования Topcon и Sokkia в России и странах СНГ.
 Мы реализуем: электронные тахеометры, широко востребованные в строительстве, топографических съемках,
@@ -27,12 +15,6 @@
 сенсорной клавиатурой, работающие в безотражательном режиме съемки и с использованием лазерного луча.
 В широком ассортименте представлены нивелиры – оптические, лазерные и цифровые, обеспечивающие высокую
 производительность при минимальных затратах труда.</p>
+</div>
 
-    </div>
-    <div class="footer">
-      Все права защищены "GeoShop"
-    </div>
-
-
-  </body>
-</html>
+{% endblock %}

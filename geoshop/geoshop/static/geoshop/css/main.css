@@ -17,7 +17,7 @@
 #shop h1 {
   position: relative;
   top: 15px;
-  margin-top: 20px;
+  margin-top: 0px;
   color: #ffffff;
   font-family: 'Jomhuria-Regular', cursive;
   font-size: 50px;
@@ -60,6 +60,11 @@
   text-decoration: none;
 }
 
+#nav li a:hover{
+  color: #f09205;
+  text-decoration: none;
+}
+
 #nav li:hover {
   color: #f09205;
   background: #333;
@@ -71,6 +76,7 @@
 }
 
 #main {
+display: block;
   width: 100%;
   height: 500px;
   background: #90d3f5;
@@ -87,6 +93,7 @@
 }
 
 #main h2{
+
   position: relative;
   left: 60%;
 }
@@ -157,4 +164,36 @@
 
 .map {
   float: left;
+}
+
+#menu {
+  position: relative;
+  margin-top: -17px;
+}
+
+#menu_nav li {
+  text-decoration: none;
+  float: left;
+  display: inline;
+  background: #93b349;
+  padding: 0 46px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#menu_nav li:hover{
+  border-radius: 3px;
+  transform: scale(1.04);
+  box-shadow: inset 0 0 0 2px #eba800;
 }

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'geoshop/css/main.css' %}">
+    <title>{% block title %}Магазин{% endblock %}</title>
+  </head>
+  <body id = "body">
+    <div class="header">
+    <div id = "shop"> <h1>GEO SHOP</h1> <p>Современное геодезическое оорудование</p></div>
+    <ul id = "nav">
+      <li><a href="{% url 'index' %}">Главная</a></li>
+      <li><a href="{% url 'products:index' %}">Продукты</a></li>
+      <li><a href="{% url 'contacts' %}">Контакты</a></li>
+    </ul>
+    </div>
+  {% block main %}
+
+  {% endblock %}
+    <div class="footer">
+      Все права защищены "GeoShop"
+    </div>
+
+
+  </body>
+</html>
