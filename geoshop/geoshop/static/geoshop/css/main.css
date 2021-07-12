@@ -28,7 +28,7 @@
 #shop p {
   position: relative;
   bottom: 25px;
-  margin-top: 0;
+
   color: #f09205;
   font-family: 'Jomhuria-Regular';
   font-size: 15px;
@@ -76,13 +76,13 @@
 }
 
 #main {
-display: block;
-  width: 100%;
-  height: 500px;
+  display: block;
+  height: 800px;
   background: #90d3f5;
 }
 
 .footer {
+  position: absolute;
   background-color: #535452;
   width: 100%;
   position: relative;
@@ -167,13 +167,16 @@ display: block;
 }
 
 #menu {
-  position: relative;
+  text-align: center;
+  background: #90d3f5;
+  height: 20px;
   margin-top: -17px;
 }
 
 #menu_nav li {
+position: relative;
+  top: 5px;
   text-decoration: none;
-  float: left;
   display: inline;
   background: #93b349;
   padding: 0 46px;
